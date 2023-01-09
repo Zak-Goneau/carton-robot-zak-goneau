@@ -1,3 +1,12 @@
+radio.onReceivedNumber(function (receivedNumber) {
+    pins.servoWritePin(AnalogPin.P0, 0)
+    basic.pause(500)
+    pins.servoWritePin(AnalogPin.P0, 180)
+    basic.pause(500)
+})
+input.onButtonPressed(Button.A, function () {
+    radio.sendNumber(0)
+})
 let angle = 0
 let opened = 95
 let closed = 175
