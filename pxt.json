@@ -1,5 +1,5 @@
 {
-    "name": "Carton Robot (Zak Goneau)",
+    "name": "Carton Robot Movement Control (Zak Goneau)",
     "description": "",
     "dependencies": {
         "core": "*",
