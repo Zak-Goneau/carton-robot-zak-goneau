@@ -1,11 +1,8 @@
-let opened = -90
-let closed = -270
+let opened = 90
+let closed = 270
 basic.forever(function () {
-	
-})
-basic.forever(function () {
-    pins.servoWritePin(AnalogPin.P0, opened)
+    servos.P0.setAngle(opened)
     basic.pause(1000)
-    pins.servoWritePin(AnalogPin.P0, closed)
+    servos.P0.setAngle(closed)
     basic.pause(1000)
 })
